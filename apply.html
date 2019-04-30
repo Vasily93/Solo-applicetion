@@ -12,50 +12,61 @@
     <h1>WE ARE HERE TO HELP</h1>
     <h2>Tell us about your bicycle and yourself</h2>
     <hr>
-    <section>
-        <p>About You:</p> 
-            <p>
-                <label>Your Name:</label>
-                <input>    
-            </p>
-            <p>
-                <label>Phone #:</label>
-                <input>
-            </p>
-        <hr>
-        <p>Your Bicycle:</p>
-        <p>
-            <label>Bicycle brand:</label>
-            <select>
+    <form id="bike-application">
+        <fieldset>
+            <legend>About You:</legend>     
+            <label class="stacked-label" for="name">Your Name:</label>
+            <input type="text" class="text-input" id="name" placeholder="Your Name" required><br>    
+            <label class="stacked-label" for="phone">Phone #:</label>
+            <input type="text" class="text-input" id="phone" placeholder="000-000-0000" required>        
+        </fieldset>
+
+        <fieldset>  
+            <legend>Your Bicycle:</legend>
+            <label class="line-label" for="brand">Bicycle brand:</label>
+            <select id="brand" required>
                 <option value="" hidden disabled selected>Slecet a brand</option>
-                <option>Fuji</option>
-                <option>Shwin</option>
-                <option>Trek</option>
-                <option>GT</option>
-                <option>Else...</option>
+                <option value="fuji">Fuji</option>
+                <option value="shwin">Shwin</option>
+                <option value="trek">Trek</option>
+                <option value="gt">GT</option>
+                <option value="else">Else...</option>
             </select>
-        </p>
-        <p>
-            <label>Write short description:</label><br>
-            <textarea></textarea>
-        </p>
-        <hr>
-        <p>
-            <label class="check">Special Futures:</label><br>
-            <input class="check"type="checkbox">
-            <label class="check">Disk brakes</label>
-            <input class="check" type="checkbox">
-            <label class="check">Flesh lights</label>
-            <input class="check" type="checkbox">
-            <label class="check">Back rack</label>
-        </p>
-        <hr>
-        <p>
-            <label>How much do you live your bike?</label>
-            <input type="range">
-        </p>
-        <p><button>Help Me Find My Bike</button></p>
-    
-    </section>    
+            <p>
+                <label class="line-label" for="description">Write short description:</label><br>
+                <textarea id="description"></textarea>
+            </p>
+            <p>
+                Size:
+                <input id="adult" type="radio">
+                <label for="adult">Adult</label>
+                <input id="kids" type="radio">
+                <label for="kids">Kids</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Special Futures:</legend><br>
+            <div>
+                <input id="breakes" value="disk-breakes" type="checkbox">
+                <label for="breakes">Disk breakes</label>
+            </div>
+            <div>
+                <input id="lights" value="flesh-lights" type="checkbox">
+                <label for="lights">Flesh lights</label>
+            </div>
+            <div>
+                <input id="rack" value="back-rack" type="checkbox">
+                <label for="rack">Back rack</label>    
+            </div>
+            <p>
+                <label for="love-bike">How much do you love your bike?</label>
+                <input id="love-bike" type="range" min="1" max="10">
+            </p>
+        </fieldset>
+            <p><button>Help Me Find My Bike</button></p>
+        
+        </section>
+    </form>
+    <script type="module" src="src/apply.js"></script>
 </body>
 </html>
