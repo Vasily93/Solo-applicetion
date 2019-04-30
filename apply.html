@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Form Application</title>
+    <link rel="stylesheet" href="src/apply.css"
 </head>
 <body>
+    <header><img src="./assets/download.jpg" alt="bicycle guards"</header>
+    <h1>WE ARE HERE TO HELP</h1>
+    <h2>Tell us about your bicycle and yourself</h2>
+    <hr>
+    <section>
+        <p>About You:</p> 
+            <p>
+                <label>Your Name:</label>
+                <input>    
+            </p>
+            <p>
+                <label>Phone #:</label>
+                <input>
+            </p>
+        <hr>
+        <p>Your Bicycle:</p>
+        <p>
+            <label>Bicycle brand:</label>
+            <select>
+                <option value="" hidden disabled selected>Slecet a brand</option>
+                <option>Fuji</option>
+                <option>Shwin</option>
+                <option>Trek</option>
+                <option>GT</option>
+                <option>Else...</option>
+            </select>
+        </p>
+        <p>
+            <label>Write short description:</label><br>
+            <textarea></textarea>
+        </p>
+        <hr>
+        <p>
+            <label class="check">Special Futures:</label><br>
+            <input class="check"type="checkbox">
+            <label class="check">Disk brakes</label>
+            <input class="check" type="checkbox">
+            <label class="check">Flesh lights</label>
+            <input class="check" type="checkbox">
+            <label class="check">Back rack</label>
+        </p>
+        <hr>
+        <p>
+            <label>How much do you live your bike?</label>
+            <input type="range">
+        </p>
+        <p><button>Help Me Find My Bike</button></p>
     
+    </section>    
 </body>
 </html>
