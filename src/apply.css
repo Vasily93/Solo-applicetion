@@ -1,13 +1,9 @@
 body {
     background-color: rgb(210, 210, 231);
-    text-align: center;
-    
+    text-align: center;   
 }
 hr {
     width: 300px;
-}
-input {
-    width: 20px;
 }
 textarea {
     width: 300px;
@@ -16,3 +12,4 @@ textarea {
 input {
     margin: 5px;
 }
+
