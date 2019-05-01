@@ -16,15 +16,15 @@
         <fieldset>
             <legend>About You:</legend>     
             <label class="stacked-label" for="name">Your Name:</label>
-            <input type="text" class="text-input" id="name" placeholder="Your Name" required><br>    
+            <input type="text" class="text-input" id="name" name="name" placeholder="Your Name" required><br>    
             <label class="stacked-label" for="phone">Phone #:</label>
-            <input type="text" class="text-input" id="phone" placeholder="000-000-0000" required>        
+            <input name="phone" type="text" class="text-input" id="phone" placeholder="000-000-0000" required>        
         </fieldset>
 
         <fieldset>  
             <legend>Your Bicycle:</legend>
             <label class="line-label" for="brand">Bicycle brand:</label>
-            <select id="brand" required>
+            <select name="brand" id="brand" required>
                 <option value="" hidden disabled selected>Slecet a brand</option>
                 <option value="fuji">Fuji</option>
                 <option value="shwin">Shwin</option>
@@ -34,7 +34,7 @@
             </select>
             <p>
                 <label class="line-label" for="description">Write short description:</label><br>
-                <textarea id="description"></textarea>
+                <textarea name="description" id="description"></textarea>
             </p>
             <p>
                 Size:
@@ -60,7 +60,7 @@
             </div>
             <p>
                 <label for="love-bike">How much do you love your bike?</label>
-                <input id="love-bike" type="range" min="1" max="10">
+                <input name="love-bike" id="love-bike" type="range" min="1" max="10">
             </p>
         </fieldset>
             <p><button>Help Me Find My Bike</button></p>

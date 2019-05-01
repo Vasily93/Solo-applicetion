@@ -1,7 +1,7 @@
 function makeApplicant(formData) {
     //convert data to variables
     const bikeSize = formData.get('size') === 'adult';
-    console.log(bikeSize)
+    console.log(bikeSize);
     const loveBike = parseInt(formData.get('love-bike')); 
     //make our object literal
     const applicant = {

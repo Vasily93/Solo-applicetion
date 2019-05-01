@@ -1,4 +1,4 @@
-import getApplicant from '../src/make-applicat.js';
+import getApplicant from '../src/make-applicant.js';
 const test = QUnit.test;
 
 test('creates applicant from data', (assert) => {
@@ -6,7 +6,7 @@ test('creates applicant from data', (assert) => {
         name: 'john',
         phone: '503-954-4973',
         brand: 'fuji',
-        bikeSize: true,
+        bikeSize: false,
         description: 'blue mountain bike',
         futures: ['lights', 'rack'],
         loveBike: 9
@@ -16,7 +16,7 @@ test('creates applicant from data', (assert) => {
     formData.set('name', expected.name);
     formData.set('phone', expected.phone);
     formData.set('brand', expected.brand);
-    formData.set('size', 'adult');
+    formData.set('size', 'kids');
     formData.set('description', expected.description);
     formData.set('futures', expected.futures[0]);
     formData.append('futures', expected.futures[1]);
