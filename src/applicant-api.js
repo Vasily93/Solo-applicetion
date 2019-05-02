@@ -1,8 +1,9 @@
 const applicantApi = {
+    storage: localStorage,
     save(applicant) {
         const applicants = applicantApi.getAll();
         applicants.push(applicant);
-        const json = JSON.stringify(applicant);
+        const json = JSON.stringify(applicants);
         applicantApi.storage.setItem('applicants', json);
     },
     get() {

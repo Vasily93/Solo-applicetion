@@ -1,6 +1,6 @@
 import applicantApi from './applicant-api.js';
 
-cosnt tbody = document.getElementById('applicants');
+const tbody = document.getElementById('applicants');
 
 const applicants = applicantApi.getAll();
 
