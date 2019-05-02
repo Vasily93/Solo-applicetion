@@ -6,6 +6,7 @@ const brand = document.getElementById('brand');
 const description = document.getElementById('description');
 const size = document.getElementById('size');
 const futures = document.getElementById('futures');
+const loveBike = document.getElementById('love-bike');
 
 const applicant = applicantApi.get();
 
@@ -19,3 +20,4 @@ brand.textContent = applicant.brand;
 description.textContent = applicant.description;
 size.textContent = applicant.size;
 futures.textContent = applicant.futures;
+loveBike.textContent = applicant.loveBike;
