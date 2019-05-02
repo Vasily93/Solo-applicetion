@@ -29,13 +29,13 @@ for(let i = 0; i < applicants.lelngth; i++) {
     sizeCell.textContent = applicant.size;
     tr.appendChild(sizeCell);
 
-    const futuresCell = document.createElement('td');
+    /*const futuresCell = document.createElement('td');
     let futuresList = '';
     if(applicant.futures) {
         futuresList = applicant.futures.join(', ');
     }
     futuresCell.textContent = applicant.futures;
-    tr.appendChild(futuresCell);
+    tr.appendChild(futuresCell);*/
     
     const loveBikeCell = document.createElement('td');
     loveBikeCell.textContent = applicant.loveBike;

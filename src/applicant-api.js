@@ -8,7 +8,7 @@ const applicantApi = {
     },
     get() {
         const applicants = applicantApi.getAll();
-        return applicants[0];
+        return applicants[applicants.length -1];
     },
     getAll() {
         const json = applicantApi.storage.getItem('applicants');
