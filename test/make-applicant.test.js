@@ -24,5 +24,5 @@ test('creates applicant from data', (assert) => {
 
     const applicant = getApplicant(formData);
 
-    assert.deepEqual(applicant, expected)
+    assert.deepEqual(applicant, expected);
 });

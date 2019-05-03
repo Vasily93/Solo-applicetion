@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(203, 203, 211);
+    max-width: 300px;
+}
+
+dt {
+    background: rgb(114, 114, 129)
+}
+
+dd, dt {
+    border: 1px black solid;
+    margin: 5px, 5px, 5px, 5px;
+    padding: 8px;
+}
