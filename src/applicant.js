@@ -23,4 +23,4 @@ brand.textContent = applicant.brand;
 description.textContent = applicant.description;
 size.textContent = applicant.size;
 futures.textContent = applicant.futures;
-//loveBike.textContent = applicant.loveBike;
+loveBike.textContent = applicant.loveBike;
