@@ -2,7 +2,7 @@ import applicantApi from '../src/applicant-api.js';
 
 const test = QUnit.test;
 
-test('round-trip applicant' , function(assert) {
+test('round-trip applicant', function(assert) {
     const applicant = {
         name: 'vasily'
     };

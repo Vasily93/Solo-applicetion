@@ -6,7 +6,7 @@ test('creates applicant from data', (assert) => {
         name: 'john',
         phone: '503-954-4973',
         brand: 'fuji',
-        bikeSize: false,
+        size: false,
         description: 'blue mountain bike',
         futures: ['lights', 'rack'],
         loveBike: 9
