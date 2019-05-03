@@ -15,7 +15,6 @@ const applicantApi = {
                 return applicant;
             }
         }
-
     },
 
     getAll() {
