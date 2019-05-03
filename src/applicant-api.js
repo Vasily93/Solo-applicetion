@@ -10,12 +10,14 @@ const applicantApi = {
         const applicants = applicantApi.getAll();
         return applicants[0];
     },
+
     getAll() {
         const json = applicantApi.storage.getItem('applicants');
         let applicants = JSON.parse(json);
         if(!applicants) {
             applicants = [];
         }
+
         return applicants;
     }
 };

@@ -4,9 +4,9 @@ const tbody = document.getElementById('applicants');
 
 const applicants = applicantApi.getAll();
 
-for(let i = 0; i < applicants.lelngth; i++) {
+for(let i = 0; i < applicants.length; i++) {
     const applicant = applicants[i];
-
+    console.log(tbody);
     const tr = document.createElement('tr');
 
     const nameCell = document.createElement('td');
