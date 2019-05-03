@@ -6,11 +6,17 @@ const applicants = applicantApi.getAll();
 
 for(let i = 0; i < applicants.length; i++) {
     const applicant = applicants[i];
-    console.log(tbody);
     const tr = document.createElement('tr');
 
+    // input: applicant
+
     const nameCell = document.createElement('td');
-    nameCell.textContent = applicant.name;
+    const link = document.createElement('a');
+    const searchParams = new URLSearchParams();
+    searchParams.set('name', applicant.name);
+    link.href = 'applicant.html?' + searchParams.toString();
+    link.textContent = applicant.name;
+    nameCell.appendChild(link);
     tr.appendChild(nameCell);
 
     const phoneCell = document.createElement('td');
@@ -28,18 +34,12 @@ for(let i = 0; i < applicants.length; i++) {
     const sizeCell = document.createElement('td');
     sizeCell.textContent = applicant.size;
     tr.appendChild(sizeCell);
-
-    /*const futuresCell = document.createElement('td');
-    let futuresList = '';
-    if(applicant.futures) {
-        futuresList = applicant.futures.join(', ');
-    }
-    futuresCell.textContent = applicant.futures;
-    tr.appendChild(futuresCell);*/
     
     const loveBikeCell = document.createElement('td');
     loveBikeCell.textContent = applicant.loveBike;
     tr.appendChild(loveBikeCell);
+
+    //output:tr
 
     tbody.appendChild(tr);
 }

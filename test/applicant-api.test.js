@@ -8,7 +8,7 @@ test('round-trip applicant', function(assert) {
     };
 
     applicantApi.save(applicant);
-    const result = applicantApi.get();
+    const result = applicantApi.get(applicant.name);
 
     assert.deepEqual(result, applicant);
 });
