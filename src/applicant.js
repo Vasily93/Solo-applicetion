@@ -8,8 +8,12 @@ const size = document.getElementById('size');
 const futures = document.getElementById('futures');
 const loveBike = document.getElementById('love-bike');
 
-const applicant = applicantApi.get();
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
+console.log(id);
 
+const applicant = applicantApi.get(id);
+console.log(applicant);
 if(!applicant) {
     window.location = './';
 }
