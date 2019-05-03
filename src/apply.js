@@ -10,4 +10,5 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     const applicant = makeApplicant(formData);
     applicantApi.save(applicant);
+
 });

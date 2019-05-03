@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(171, 171, 231); 
+}
+
+td {
+    font-size: 25px;
+    padding: 10px;
+}
+
+tr {
+    background-color: aliceblue;
+}

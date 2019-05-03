@@ -1,19 +1,14 @@
-dl {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    
+body {
+    background-color: rgb(203, 203, 211);
+    max-width: 300px;
 }
 
-dt, dd {
-    display: inline-block;
-    padding: 10px 5px;
-    margin: 5px, 5px, 5px, 5px;
-    font-family: Arial;
-}
 dt {
-    background: rgb(195, 195, 241);
+    background: rgb(114, 114, 129)
 }
 
-dd {
-    font-size: 20px;
+dd, dt {
+    border: 1px black solid;
+    margin: 5px, 5px, 5px, 5px;
+    padding: 8px;
 }
